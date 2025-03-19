@@ -1,7 +1,7 @@
 import 'exam4.dart';
 
 Future<void> main() async {
-  final praktikanStudent = PraktikanStudent('Lutfi', 18);
+  final praktikanStudent = PraktikanStudent('Ubay Dillah', 19);
 
   print('Full Name = ${praktikanStudent.fullName}');
   print('Age       = ${praktikanStudent.age}');

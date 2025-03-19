@@ -1,27 +1,24 @@
 dynamic oddOrEven(int number) {
-  // TODO 1
-
-  return null;
-
-  // End of TODO 1
+  return number % 2 == 0 ? 'Genap' : 'Ganjil';
 }
 
 dynamic createListOneToX(int x) {
-  final List<int> list = [];
+  if (x < 1) {
+    return [];
+  }
 
-  // TODO 2
-
-  // End of TODO 2
-
-  return list;
+  return List.generate(x, (index) => index + 1);
 }
 
 String getStars(int n) {
-  var result = '';
+  if (n < 1) {
+    return '';
+  }
 
-  // TODO 3
-
-  // End of TODO 3
+  String result = '';
+  for (int i = n; i >= 1; i--) {
+    result += '*' * i + '\n';
+  }
 
   return result;
 }
