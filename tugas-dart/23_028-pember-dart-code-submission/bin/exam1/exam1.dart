@@ -1,9 +1,9 @@
 dynamic studentInfo() {
   // TODO 1
 
-  var name;
-  var favNumber;
-  var isPraktikan;
+  var name = "Miftahuzzain Abrori"; 
+  var favNumber = 9; 
+  var isPraktikan = true; 
 
   // End of TODO 1
   return [name, favNumber, isPraktikan];
@@ -17,7 +17,8 @@ dynamic circleArea(num r) {
 
     // TODO 2
 
-    return 0;
+    double area = pi * r * r;
+    return area; 
 
     // End of TODO 2
   }
@@ -25,8 +26,17 @@ dynamic circleArea(num r) {
 
 int? parseAndAddOne(String? input) {
   // TODO 3
+  if (input == null) {
+    return null; 
+  }
 
-  return 0;
-
+  try {
+    int parsedValue = int.parse(input);
+    return parsedValue + 1;
+  } catch (e) {
+    throw Exception(
+      'Input harus berupa angka',
+    ); 
+  }
   // End of TODO 3
 }
