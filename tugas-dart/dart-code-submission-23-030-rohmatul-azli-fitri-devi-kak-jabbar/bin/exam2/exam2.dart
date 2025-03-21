@@ -1,14 +1,12 @@
 dynamic oddOrEven(int number) {
   // TODO 1
-
-  return (number % 2 == 0) ? "Genap" : "Ganjil";
-
+  return (number % 2 == 0) ? 'Genap' : 'Ganjil';
   // End of TODO 1
 }
 
 dynamic createListOneToX(int x) {
   final List<int> list = [];
-
+  
   // TODO 2
   if (x >= 1) {
     list.addAll(List.generate(x, (index) => index + 1));
@@ -20,10 +18,10 @@ dynamic createListOneToX(int x) {
 
 String getStars(int n) {
   var result = '';
-
+  
   // TODO 3
   for (int i = n; i > 0; i--) {
-    result += "*" * i + "\n";
+    result += '*' * i + '\n';
   }
   // End of TODO 3
 

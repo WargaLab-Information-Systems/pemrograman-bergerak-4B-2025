@@ -26,8 +26,8 @@ Map<String, String> updatePivotPlayer() {
   // TODO 3
 
   futsalPlayers["Pivot"] = "Fajar";
-  
+  return futsalPlayers;
   // End of TODO 3
 
-  return futsalPlayers;
+  
 }
