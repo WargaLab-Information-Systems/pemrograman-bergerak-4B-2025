@@ -7,7 +7,7 @@ class PraktikanStudent {
   int incrementAge() {
     // TODO 1
 
-    return 0;
+    return age + 1;
 
     // End of TODO 1
   }
@@ -15,7 +15,12 @@ class PraktikanStudent {
   Future<String> getStudentInfo() {
     // TODO 2
 
-    return Future.value("");
+    getStudentInfo(String fullName, int age){
+      fullName = "Lutfi";
+      age = 18;
+    }
+
+    return Future.value("Nama Lengkap: $fullName Umur: $age Tahun");
 
     // End of TODO 2
   }
@@ -24,7 +29,8 @@ class PraktikanStudent {
 dynamic createStudent() {
   // TODO 3
 
-  return null;
+  return PraktikanStudent("David Iman Furqoni", 20);
+
 
   // End of TODO 3
 }
